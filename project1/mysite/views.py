@@ -5,7 +5,7 @@ import stripe
 
 
 def create_checkout_session(request):
-    stripe.api_key = 'sk_test_51PEKJRBzwCzDcIeBmEUNimtCj35GHNxIWodw53ziZHeo4ELy06v0O00cGFRTLjV1N5ZRgYecN8PPZLRe5CbRn5Nj00gVFx04rC'
+    stripe.api_key =''
     session = stripe.checkout.Session.create(
         line_items=[{
         'price_data': {
